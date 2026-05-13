@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /*
+   Ironclad Plumbing — palette aligned with ironcladplumbing.site (Hostinger / Zyro theme).
+   Mapped onto existing lk-* tokens so layout CSS stays unchanged.
+  */
+  --lk-orange: #673de6;
+  --lk-orange-bright: #8c85ff;
+  --lk-orange-hover: #5025d1;
+  --lk-orange-muted: rgba(103, 61, 230, 0.14);
+  --lk-accent-line: rgba(103, 61, 230, 0.38);
+  --lk-maroon-accent: #2f1c6a;
+  --lk-text: #1d1e20;
+  --lk-muted: #727586;
+  --lk-bg: #f2f3f6;
+  --lk-bg-soft: #ebe4ff;
+  --lk-surface: #ffffff;
+  --lk-card-border: rgba(54, 52, 77, 0.1);
+  --lk-shadow: 0 6px 32px rgba(47, 28, 106, 0.08);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Montserrat, system-ui, -apple-system, sans-serif;
+  background: var(--lk-bg);
+  color: var(--lk-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
