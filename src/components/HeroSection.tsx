@@ -23,7 +23,8 @@ export function HeroSection() {
                 <div className="hero__rule" aria-hidden />
 
                 <p className="hero__tagline">
-                  Done right the first time – Open 6:00 AM – 9:00 PM
+                  Done right the first time –{' '}
+                  <strong>Open 6:00 AM – 9:00 PM</strong>
                 </p>
               </div>
 
