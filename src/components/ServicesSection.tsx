@@ -264,7 +264,11 @@ export function ServicesSection() {
           <h2 id="svc-heading" className="svc-heading">
             Plumbing Services <span className="svc-heading__accent">You Can Count On</span>
           </h2>
-          <p className="svc-lede">Fast, reliable, and professional plumbing solutions for your home.</p>
+          <p className="svc-lede">
+            Reliable plumbing service for homes in Aurora. Our plumbing company handles drain plumbing,
+            clogged drains, leak detection, and plumbing repairs. Fast emergency plumbing service when you
+            need it most.
+          </p>
         </header>
 
         <div className="svc-cards">

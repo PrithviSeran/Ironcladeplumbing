@@ -583,9 +583,9 @@
 .hero__tagline {
   margin: 0;
   font-family: Montserrat, system-ui, sans-serif;
-  font-size: clamp(11px, 1.35vw, 13px);
+  font-size: clamp(14px, 2.15vw, 19px);
   font-weight: 600;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--lk-muted);
   line-height: 1.55;
@@ -606,6 +606,16 @@
   max-width: 38rem;
 }
 
+.hero__pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+  align-self: flex-start;
+  width: 100%;
+  min-width: 0;
+}
+
 .hero__loc {
   display: inline-flex;
   align-items: center;
@@ -621,9 +631,15 @@
   background: #fff;
   white-space: nowrap;
   flex-shrink: 0;
-  align-self: flex-start;
   width: fit-content;
   max-width: 100%;
+  box-sizing: border-box;
+}
+
+.hero__loc--wrap {
+  white-space: normal;
+  line-height: 1.3;
+  max-width: min(100%, 17.5rem);
 }
 
 .hero__loc-icon {
@@ -684,26 +700,37 @@
 .hero__cta-copy {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: flex-start;
+  gap: 6px;
   text-align: left;
   min-width: 0;
+  flex: 1;
 }
 
 .hero__cta-promo {
   font-family: Montserrat, system-ui, sans-serif;
-  font-size: clamp(10px, 1.35vw, 12px);
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-size: clamp(0.95rem, 2.45vw, 1.32rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.96;
+  opacity: 1;
+  line-height: 1.2;
 }
 
 .hero__cta-phone {
   font-family: Montserrat, system-ui, sans-serif;
-  font-size: clamp(1.25rem, 3.2vw, 1.85rem);
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
+  font-size: clamp(0.72rem, 1.55vw, 0.88rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+@media (max-width: 360px) {
+  .hero__cta-phone {
+    white-space: normal;
+    font-size: clamp(0.68rem, 3.6vw, 0.82rem);
+  }
 }
 
 .hero__visual {
@@ -839,8 +866,8 @@
     max-width: none;
   }
 
-  .hero__loc {
-    align-self: flex-start;
+  .hero__pillRow {
+    align-self: stretch;
   }
 
   .hero__cta {
@@ -886,7 +913,7 @@
 
 .svc-intro {
   text-align: center;
-  max-width: 760px;
+  max-width: 920px;
   margin: 0 auto clamp(48px, 6vw, 64px);
 }
 
