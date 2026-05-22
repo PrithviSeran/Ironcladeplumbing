@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { PHONE_DISPLAY, PHONE_TEL } from '../lib/constants'
+import { ThemeToggle } from './ThemeToggle'
 
 /** Below this width the CSS breakpoint shows the hamburger; above it we still collapse when the row overflows. */
 const DRAWER_BREAKPOINT_PX = 1600
@@ -177,6 +178,7 @@ export function SiteHeader() {
           </div>
         </nav>
         <div className="site-header__barEnd">
+          <ThemeToggle />
           <a
             className="site-header__phone"
             href={PHONE_TEL}

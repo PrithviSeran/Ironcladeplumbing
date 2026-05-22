@@ -9,6 +9,7 @@ html {
 }
 
 :root {
+  color-scheme: light;
   /*
    Ironclad Plumbing — palette aligned with ironcladplumbing.site (Hostinger / Zyro theme).
    Mapped onto existing lk-* tokens so layout CSS stays unchanged.
@@ -24,8 +25,37 @@ html {
   --lk-bg: #f2f3f6;
   --lk-bg-soft: #ebe4ff;
   --lk-surface: #ffffff;
+  --lk-elevated: #ffffff;
   --lk-card-border: rgba(54, 52, 77, 0.1);
   --lk-shadow: 0 6px 32px rgba(47, 28, 106, 0.08);
+  --lk-header-edge: rgba(255, 255, 255, 0.9);
+  --lk-input-bg: #fafbfc;
+  --lk-backdrop: rgba(29, 30, 32, 0.48);
+  --lk-hero-bg: #fafbfd;
+  --lk-on-accent: #ffffff;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --lk-orange: #8c85ff;
+  --lk-orange-bright: #a59fff;
+  --lk-orange-hover: #673de6;
+  --lk-orange-muted: rgba(140, 133, 255, 0.18);
+  --lk-accent-line: rgba(140, 133, 255, 0.42);
+  --lk-maroon-accent: #ebe4ff;
+  --lk-text: #f2f3f6;
+  --lk-muted: #a8aabb;
+  --lk-bg: #12131a;
+  --lk-bg-soft: #1a1728;
+  --lk-surface: #1e2030;
+  --lk-elevated: #252838;
+  --lk-card-border: rgba(255, 255, 255, 0.1);
+  --lk-shadow: 0 8px 36px rgba(0, 0, 0, 0.38);
+  --lk-header-edge: rgba(255, 255, 255, 0.06);
+  --lk-input-bg: #252838;
+  --lk-backdrop: rgba(0, 0, 0, 0.62);
+  --lk-hero-bg: #151620;
+  --lk-on-accent: #ffffff;
 }
 
 body {

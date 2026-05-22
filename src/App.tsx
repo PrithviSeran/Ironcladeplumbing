@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import './page.css'
 
+import { ThemeProvider } from './context/ThemeContext'
 import { ScrollToTop } from './components/ScrollToTop'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
@@ -14,7 +15,7 @@ import { ServiceAreasPage } from './pages/ServiceAreasPage'
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <SiteHeader />
       <ScrollToTop />
       <main>
@@ -28,7 +29,7 @@ function App() {
         </Routes>
       </main>
       <SiteFooter />
-    </>
+    </ThemeProvider>
   )
 }
 

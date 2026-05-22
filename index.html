@@ -15,6 +15,18 @@
       rel="stylesheet"
     />
     <title>Reliable Plumbing Services in Aurora, Ontario | Ironclad Plumbing</title>
+    <script>
+      (function () {
+        try {
+          var key = 'ironclad-theme';
+          var theme = localStorage.getItem(key);
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
