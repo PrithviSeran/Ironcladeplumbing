@@ -15,7 +15,7 @@ export function HeroSection() {
             <div className="hero__copy">
               <div className="hero__copyText">
                 <h1 id="hero-heading" className="hero__display">
-                  <span className="hero__display-line">Licensed</span>
+                  <span className="hero__display-line">Licensed Leak Repair</span>
                   <span className="hero__display-line hero__display-line--lead">Plumber</span>
                   <span className="hero__display-line">in Aurora</span>
                 </h1>
